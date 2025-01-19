@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite">
+<listeners>
+<listener class-name="qa.listen">
+</listener>
+</listeners>
+
+    <test name="TestGroup">
+        <classes>
+            <class name="qa.one"/>
+            <class name="qa.two"/>
+        </classes>
+    </test>
+
+    <test name="TestGroup1">
+        <classes>
+            <class name="qa.three">
+            <methods>
+                        <include name="thir"></include>
+
+            </methods>
+            </class>
+            <class name="qa.four" />
+        </classes>
+    </test>
+
+    <test name="TestPackage">
+    <packages>
+    <package name ="qa2"></package>
+    </packages>
+    </test>
+</suite>
